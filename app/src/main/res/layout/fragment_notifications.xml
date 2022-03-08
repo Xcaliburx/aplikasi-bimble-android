@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menghitung Volume"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="center"
+        android:layout_marginTop="50px"
+        android:textSize="80px" />
+
+
+    <EditText
+        android:id="@+id/panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Input Panjang Balok"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/white"
+        android:layout_marginRight="40px"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="150px"/>
+
+    <EditText
+        android:id="@+id/lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Input Lebar Balok"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="40px"
+        app:layout_constraintTop_toBottomOf="@id/panjang"
+        android:layout_marginTop="10px"/>
+
+    <EditText
+        android:id="@+id/tinggi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Input Tinggi Balok"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="40px"
+        app:layout_constraintTop_toBottomOf="@id/lebar"
+        android:layout_marginTop="10px"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Volume Balok :"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:textSize="50px"
+        app:layout_constraintTop_toBottomOf="@id/tinggi2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/output"
+        app:layout_constraintTop_toBottomOf="@id/tinggi2"
+        android:layout_marginTop="50px"
+        android:textColor="@color/white"
+        android:textSize="50px"
+        android:layout_marginLeft="10px"
+        android:text="100"/>
+
+    <EditText
+        android:id="@+id/alas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Input Alas Pyramid"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/white"
+        android:layout_marginRight="40px"
+        app:layout_constraintTop_toBottomOf="@id/output"
+        android:layout_marginTop="150px"/>
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Input Tinggi Pyramid"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="40px"
+        app:layout_constraintTop_toBottomOf="@id/alas"
+        android:layout_marginTop="10px"/>
+
+    <TextView
+        android:id="@+id/output2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Volume Pyramid :"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:textSize="50px"
+        app:layout_constraintTop_toBottomOf="@id/tinggi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/output2"
+        app:layout_constraintTop_toBottomOf="@id/tinggi"
+        android:layout_marginTop="50px"
+        android:textColor="@color/white"
+        android:textSize="50px"
+        android:layout_marginLeft="10px"
+        android:text="150"/>
+
+    <EditText
+        android:id="@+id/jari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Input Jari Jari Tabung"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/white"
+        android:layout_marginRight="40px"
+        app:layout_constraintTop_toBottomOf="@id/output2"
+        android:layout_marginTop="150px"/>
+
+    <EditText
+        android:id="@+id/tinggi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:hint="Input Tinggi Tabung"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="40px"
+        app:layout_constraintTop_toBottomOf="@id/jari"
+        android:layout_marginTop="10px"/>
+
+    <TextView
+        android:id="@+id/output3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Volume Tabung :"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:textSize="50px"
+        app:layout_constraintTop_toBottomOf="@id/tinggi3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/output3"
+        app:layout_constraintTop_toBottomOf="@id/tinggi3"
+        android:layout_marginTop="50px"
+        android:textColor="@color/white"
+        android:textSize="50px"
+        android:layout_marginLeft="10px"
+        android:text="400"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:text="Email"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"/>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/Email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"/>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/Password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/textSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gapunya akun ? Bikin dibawah"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/signin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="80dp"
+        />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textSign"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp" />
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
